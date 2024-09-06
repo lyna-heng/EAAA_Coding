@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page - Morten Bonderup</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body class="body_background">
+    <div class="flex-container">
+    <form class="bmiform" id="calculation_form">
+        <h1>BMI Calculator</h1>
+    <div class="formelement">
+     <label for="weight_field" class="label_field">Weight in kilos:</label>
+     <input type="number" class="input_field" id="weight_field" value="0.0" min="30.0" required>
+    </div>
+    <div class="formelement">
+     <label for="height_field" class="label_field">Height in meters:</label>
+     <input type="number" class="input_field" id="height_field" step="0.01" value="0.00" min="1.00" required>
+    </div>
+    <div class="formelement">
+     <label for="result_field" class="label_field">BMI value:</label>
+     <input type="number" class="input_field" id="result_field" readonly>
+    </div>
+    <div class="formelement">
+     <button type="reset" id="clear" class="clearbutton"> Clear</button>
+     <button type="submit" class="lyna">Calculate</button>
+    </div>
+    </form>
+
+<aside class="table">
+    <fieldset>
+        <legend>BMI classification</legend>
+        <img src="classifications.png" alt="BMI classification scheme">
+    </fieldset>
+</aside>
+</div>
+    <script src="javascrip.js"></script>
+</body>
+</html>
