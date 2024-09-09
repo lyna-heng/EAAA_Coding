@@ -1,0 +1,298 @@
+/* reset margin and padding on all elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+/* --------- NEWSLETTER ---------- */
+.newsletter {
+    margin-top: 80px; /* 80pz to the section above newsletter section */
+}
+
+.newsletter-form-container{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.newsletterlabel {
+    display: none;
+}
+
+.newsletter-signup-form input[type="email"] {
+    width: 250px;
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.subscribe-button {
+    width: 250px;
+    padding: 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* ---------- HEADER AND NAVIGATION ---------- */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.navigation-links {
+    display: flex;
+    gap: 15px;
+    margin-right: 10px;
+}
+
+.navigation-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-links a:hover {
+    text-decoration: underline;
+}
+
+/* --------------- MOOD SECTION --------------- */
+
+.mood-container {
+    position: relative;
+    background-image: url(images/magaluf-beach.jpg);
+    height: 60vh; /* means that the image takes up 60% if the screen height */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mood-box {
+    position: absolute;
+    width: 360px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px 20px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* RGB (O to 255) 0.1=10% opacity */
+}
+
+/* --------- TRAVEL TIPS ------------ */
+
+.travel-tips-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.travel-tips-image {
+    height: 218px;
+}
+
+.travel-tips-accordion {
+    width: 370px;
+}
+
+summary {
+    cursor: pointer;
+    background-color: #f6f6f6;
+    color: #454545;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 8px;
+    margin-bottom: 4px;
+}
+
+details div {
+    padding: 32px 16px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 2px;
+    width: 370px;
+}
+
+/* ------- Testimonials ------- */
+.testimonials {
+    margin-top: 80px;
+}
+
+.testimonial-header {
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap; /* flexbox adjusts cards depending on screen size */
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.testimonial-card img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    height: 100px;
+}
+
+.testimonial-text {
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.job-position {
+    color: #888;
+}
+
+/* --------- Banner section ---------- */
+.banner-container {
+    display: block;
+    padding-top: 50px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* ---------- Option cards ---------- */
+.option-container {
+    background-color: #f9f9f9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 80px;
+}
+
+.option-header {
+    text-align: center;
+}
+
+.option-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.option-image {
+    width: 300px;
+    border-radius: 4px;
+}
+
+.option-card-content {
+    margin-top: 10px;
+    width: 300px;
+}
+
+.option-card p {
+    color: #6b6a6a;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.option-card:nth-child(3) {
+    flex-direction: row-reverse;
+}
+
+/* --------- FAT FOOTER ---------- */
+.fat-footer {
+    margin-top: 80px;
+    background-color: #f9f9f9;
+}
+
+.fat-footer-container {
+    display: flex; /* children behaves like a flexbox */
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    row-gap: 20px;
+    justify-content: space-between;
+}
+
+.contact-info,
+.about-us,
+.footer-links {
+    width: 250px;
+}
+
+.footer-links ul {
+    list-style: none; /* Turning off bullet point*/
+}
+
+.footer-links a {
+    text-decoration: none; /* remove underlines for the links */
+    margin-bottom: 5px;
+}
+
+/* ------- FAT FOOTER END ------- */
+
+/* ------------ MEDIA QUERIES -------------- */
+
+@media screen and (min-width: 600px) {
+    .option-card {
+    max-width: 800px;
+    margin: 0 auto;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .fat-footer-container {
+        flex-direction: row;
+    }
+    
+    .travel-tips-container {
+        flex-direction: row;
+    }
+
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
