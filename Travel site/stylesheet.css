@@ -185,6 +185,60 @@ details div {
     color: #888;
 }
 
+/* --------- Banner section ---------- */
+.banner-container {
+    display: block;
+    padding-top: 50px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* ---------- Option cards ---------- */
+.option-container {
+    background-color: #f9f9f9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 80px;
+}
+
+.option-header {
+    text-align: center;
+}
+
+.option-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.option-image {
+    width: 300px;
+    border-radius: 4px;
+}
+
+.option-card-content {
+    margin-top: 10px;
+    width: 300px;
+}
+
+.option-card p {
+    color: #6b6a6a;
+}
+
+.option-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.option-card:nth-child(3) {
+    flex-direction: row-reverse;
+}
 
 /* --------- FAT FOOTER ---------- */
 .fat-footer {
@@ -220,6 +274,14 @@ details div {
 
 /* ------------ MEDIA QUERIES -------------- */
 
+@media screen and (min-width: 600px) {
+    .option-card {
+    max-width: 800px;
+    margin: 0 auto;
+    }
+}
+
+
 @media screen and (min-width: 900px) {
     .fat-footer-container {
         flex-direction: row;
@@ -227,5 +289,10 @@ details div {
     
     .travel-tips-container {
         flex-direction: row;
+    }
+
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
