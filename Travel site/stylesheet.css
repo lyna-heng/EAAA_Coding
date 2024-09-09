@@ -103,7 +103,7 @@
     padding: 10px 20px 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0, 0.1); /* RGB (O to 255) 0.1=10% opacity */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* RGB (O to 255) 0.1=10% opacity */
 }
 
 /* --------- TRAVEL TIPS ------------ */
@@ -127,7 +127,7 @@ summary {
     cursor: pointer;
     background-color: #f6f6f6;
     color: #454545;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     padding: 8px;
     margin-bottom: 4px;
@@ -140,6 +140,51 @@ details div {
     margin-bottom: 2px;
     width: 370px;
 }
+
+/* ------- Testimonials ------- */
+.testimonials {
+    margin-top: 80px;
+}
+
+.testimonial-header {
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap; /* flexbox adjusts cards depending on screen size */
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.testimonial-card img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    height: 100px;
+}
+
+.testimonial-text {
+    margin-bottom: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.job-position {
+    color: #888;
+}
+
 
 /* --------- FAT FOOTER ---------- */
 .fat-footer {
