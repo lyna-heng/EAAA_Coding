@@ -1,4 +1,1 @@
 # EAAA Coding Course
-
-
-test
